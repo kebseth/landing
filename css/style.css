@@ -1,0 +1,144 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+
+
+/*Banner*/
+
+.banner-container{
+  height:100%;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.banner{
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  justify-content: center;
+  background-color: #FBCD00;
+  background-image: url("../images/mario.png");
+  height: 600px;
+}
+
+.btn-red{
+  opacity:.9;
+  background-color: #db162f;
+  border: 1px solid #474747;
+  color: #FBCD00;
+  padding: 15px 25px;
+  font-weight: bold;
+  border-radius: 25px;
+  box-shadow: 0 0 15px black;
+  transition: .3s;
+}
+
+.btn-red:hover{
+  opacity:1;
+  transition: .3s;
+  box-shadow: 0 0 45px black;
+}
+
+.red-letter{
+  color:#db162f;
+}
+
+.banner p{
+  font-weight: bold;
+}
+
+
+/*cards*/
+
+.card-work{
+  list-style:none;
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  flex-wrap: wrap;
+
+}
+
+.card-work img{
+  height:100px;
+  padding-top: 15px;
+
+}
+
+.work h2{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card{
+  border: 1px solid #FFF5EE;
+  box-shadow: 0 0 10px grey;
+  height: 280px;
+  width: 250px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*footer*/
+
+.footer{
+  height: 300px;
+  background-color: #FBCD00;
+}
+
+.follow{
+  list-style:none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  color: #db162f;
+}
+
+i{
+  color: #db162f;
+  padding: 60px;
+  transition: 0.3s;
+}
+
+i:hover{
+  box-shadow: 0 0 15px black;
+  font-size:90px;
+  transition: 0.3s;
+}
+
+@media (max-width: 810px){
+  .card-work{
+    height:600px;
+  }
+}
+
+@media (max-width: 540px){
+  .card-work{
+    height:800px;
+  }
+}
